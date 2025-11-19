@@ -21,11 +21,11 @@ PA9外接限流电阻与led
 在PA9引脚中将`output level`选`Low`，代表初始输出低电平，`mode`中选用`Output Psuh Pull`表示选用推挽模式  
 ### keil5代码实现
 ```c
-void HAL_GPIO_WritePin(GPIOX, GPIO_PIN, Pin_State)
+void HAL_GPIO_WritePin(GPIOX, GPIO_PIN, GPIO_PinState)
 ```
 1.GPIOX 代表组编号，A->D  
 2.GPIO_PIN 代表引脚编号，0->15  
-3.Pin_State 代表写入值 ，0/1 分别对应`GPIO_Pin_Reset`/`GPIO_Pin_Set`  
+3.Pin_State 代表写入值 ，0/1 分别对应`GPIO_Pin_RESET`/`GPIO_Pin_SET`  
 
 ```C
 void HAL_Delay(uint32_t Delay)
