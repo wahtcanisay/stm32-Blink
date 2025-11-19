@@ -9,7 +9,11 @@ PA9外接限流电阻与led
 
 ## 软件实现
 ### cubemx部分
-在cubemx中新建工程，选用STM32F103C8T6型号，在`systemcore`中选中`sys`，将PC13与PA9左键选中设定为GPIO_output
+在cubemx中新建工程，选用STM32F103C8T6型号，在`systemcore`中选中`sys`，将`debug`选择为`Serial Wire`  
+**注意！！！！！**  
+**如果忘记了这个步骤，芯片的调试接口会被锁死！！！**  
+
+将PC13与PA9左键选中设定为GPIO_output
 ![Cubemx_GPIO_Output](https://github.com/wahtcanisay/stm32-Blink/blob/master/Cubemx_GPIO_Output.png)
 
 随后在左侧选中`GPIO`  
